@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnya Tarek</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome via CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Butterfly+Kids&family=Flavors&family=M+PLUS+Rounded+1c&family=Marcellus&family=Mystery+Quest&family=Rubik+Puddles&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="./images/monogram-hq.png">
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+
+<body>
+    <header class="position-relative">
+        <!-- Logo on the left -->
+        <div class="ps-0 pt-0">
+            <img src="./images/logo.svg" alt="Logo" width="200rem">
+        </div>
+        <nav
+            class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute top-0 start-50 translate-middle-x w-100">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+              <!-- Offcanvas Toggle Button (Right Side) -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <!-- Navbar Content -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav d-flex align-items-center gap-lg-5 text-center w-100 justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">Work</a>
+                        </li>
+
+                        <!-- Logo: Centered Always -->
+                        <li class="nav-item mx-lg-4">
+                            <img src="./images/monogram-hq.png" width="50rem">
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Offcanvas Menu (for Mobile) -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav d-flex flex-column text-start">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+        <div class=" position-relative">
+            <h1>
+                I'am Omnya Tarek <br>
+                React Front-end
+                Developer</h1>
+
+
+            <button onclick="window.open('https://www.linkedin.com/in/omnya137/');" class="btn-1" id="cv-1">Hire
+                me</button>
+            <button
+                onclick="window.open('https://docs.google.com/document/d/1K5yHHC9wt5_6fbmTApeDBTpgFMcnpYDR/edit?usp=sharing&ouid=114671223469960248846&rtpof=true&sd=true');"
+                class="btn" id="cv">Get CV</button>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+    <div class="sidenav me-5">
+        <a href="#"><i class="fas fa-home"></i></a>
+        <a href="#about"><i class="fas fa-user"></i></a>
+        <a href="#work" class="active"><i class="fas fa-briefcase"></i></a>
+        <a href="#Education "><i class="fas fa-graduation-cap"></i></a>
+
+        <a href="#contact"><i class="fas fa-phone"></i></a>
+    </div>
+
+    </header>
+    <section class="slideanim" id="about">
+        <img src="./images/about.svg" alt="About Image">
+    </section>
+
+    <div class="text-center m-5 p-5 " id="work">
+        <h2 style="  text-shadow: 2px 2px 4px #000000;
+">My Recent Work</h2>
+
+    </div>
+    <section class="card-section mt-5 mb-0 ">
+        <div class="background"></div>
+        <div class="card" onclick="moveToCenter(this)">
+            <div class="card-body">
+                <img src="./images/1.svg" height="150px" alt="Image 1" class="card-img">
+            </div>
+            <div class="card-footer">
+                <p><a data-bs-toggle="modal" data-bs-target="#myModal"> UI Designs</a> </p>
+            </div>
+
+        </div>
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title text-secondary">Designs</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body text-center">
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/image 1.png" class="d-block w-100" alt="Nexcent Design">
+                                    <div class="d-flex justify-content-center mt-3">
+                                        <a class="text-info fs-5 fw-bold"
+                                            href="https://www.behance.net/gallery/199049781/nexcent"
+                                            target="_blank">Nexcent</a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/g2.svg" class="d-block w-100" alt="TO-DO-LIST Design">
+                                    <div class="d-flex justify-content-center mt-3">
+                                        <a class="text-info fs-5 fw-bold"
+                                            href="https://www.behance.net/gallery/196234485/TO-DO-LIST"
+                                            target="_blank">TO-DO-LIST</a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/Group 2.svg" class="d-block w-100" alt="Surf App Design">
+                                    <div class="d-flex justify-content-center mt-3">
+                                        <a class="text-info fs-5 fw-bold"
+                                            href="https://www.behance.net/gallery/199050563/surf-app"
+                                            target="_blank">Surf App</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Carousel Controls -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"
+                                    style="background-color: black;"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"
+                                    style="background-color: black;"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Card -->
+
+        <div class="card" onclick="moveToCenter(this)">
+            <div class="card-body">
+                <img src="./images/screen.png" height="150px" alt="Image 2" class="card-img">
+            </div>
+            <div class="card-footer">
+                <p><a data-bs-toggle="modal" data-bs-target="#modalWebsites"> Websites</a></p>
+            </div>
+        </div>
+
+        <!-- Second Modal - Websites -->
+        <div class="modal fade" id="modalWebsites" tabindex="-1" aria-labelledby="modalWebsitesLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-secondary">Websites</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div id="carouselWebsites" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/music.png" class="d-block w-100" alt="Bose landing page">
+                                    <div class="d-flex justify-content-center mt-3">
+                                        <a class="text-info fs-5 fw-bold"
+                                            href="https://omnyatarek.github.io/wireless-devices-page/"
+                                            target="_blank">Bose landing page</a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/2.svg" class="d-block w-100" alt="Skincare website">
+                                    <div class="d-flex justify-content-center mt-3">
+                                        <a class="text-info fs-5 fw-bold"
+                                            href="https://omnyatarek.github.io/skincare-website-landing-page/"
+                                            target="_blank">Skincare website</a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/math.png" class="d-block w-100" alt="Math calculator">
+                                    <div class="d-flex justify-content-center mt-3">
+                                        <a class="text-info fs-5 fw-bold"
+                                            href="https://omnyatarek.github.io/math-webpage/" target="_blank">Math
+                                            calculator</a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/Screenshot 2025-02-04 200452.jpg" class="d-block w-100"
+                                        alt="Online calculator">
+                                    <div class="d-flex justify-content-center mt-3">
+                                        <a class="text-info fs-5 fw-bold"
+                                            href="https://omnyatarek.github.io/online-calculator-/"
+                                            target="_blank">Online Dynamic calculator</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Carousel Controls -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselWebsites"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"
+                                    style="background-color: black;"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselWebsites"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"
+                                    style="background-color: black;"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <!-- Third Card -->
+        <div class="card" onclick="moveToCenter(this)">
+            <div class="card-body">
+                <img src="./images/3.svg" height="150px" alt="Image 1" class="card-img">
+            </div>
+            <div class="card-footer">
+                <p><a data-bs-toggle="modal" data-bs-target="#modalMockupDesigns">Mockups</a></p>
+            </div>
+        </div>
+
+
+        <!-- Third Modal - Mockup Designs -->
+        <div class="modal fade" id="modalMockupDesigns" tabindex="-1" aria-labelledby="modalMockupDesignsLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-secondary">Mockup Designs</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div id="carouselMockupDesigns" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/face.png" class="d-block w-100" alt="Facebook login mockup">
+                                    <div class="d-flex justify-content-center mt-3">
+                                        <a class="text-info fs-5 fw-bold"
+                                            href="https://omnyatarek.github.io/Facebook-mockup/"
+                                            target="_blank">Facebook login</a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/disney.png" class="d-block w-100"
+                                        alt="Disney landing page mockup">
+                                    <div class="d-flex justify-content-center mt-3">
+                                        <a class="text-info fs-5 fw-bold"
+                                            href="https://omnyatarek.github.io/Disney-middle-east-landing-page/"
+                                            target="_blank">Disney landing page</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Carousel Controls -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMockupDesigns"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"
+                                    style="background-color: black;"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselMockupDesigns"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"
+                                    style="background-color: black;"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="image-container slideanim">
+        <h2 class="title">Technical Skills</h2>
+
+        <div class="image-grid" id="skills">
+            <a href="https://www.w3.org/html/" target="_blank"><img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                    alt="HTML5"></a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"> <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                    alt="CSS3"></a>
+
+            <a href="https://getbootstrap.com/" target="_blank"><img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original-wordmark.svg"
+                    alt="Bootstrap"></a>
+
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                    alt="JavaScript"></a>
+
+            <a href="https://www.python.org/" target="_blank"> <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+                    alt="Python"></a>
+
+            <a href="https://www.jetbrains.com/pycharm/" target="_blank"> <img
+                    src="https://raw.githubusercontent.com/tandpfun/skill-icons/refs/heads/main/icons/PyCharm-Light.svg"
+                    alt="PyCharm"></a>
+
+            <a href="https://code.visualstudio.com/" target="_blank">
+                <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/refs/heads/main/icons/VSCode-Light.svg"
+                    alt="VSCode">
+            </a>
+            <a href="https://www.figma.com/" target="_blank"> <img
+                    src="https://i.pinimg.com/736x/56/67/67/56676773cb4f0c00d7d47c6a84b9407c.jpg" alt="Skill">
+            </a>
+            <a href="https://www.adobe.com/eg_en/products/illustrator.html" target="_blank"> <img
+                    src="https://i.pinimg.com/736x/26/8b/2c/268b2c766a13063edbd17ea538940bf6.jpg" alt="Skill">
+            </a>
+            <a href="https://www.adobe.com/eg_en/products/photoshop.html#modal-hash" target="_blank"> <img
+                    src="https://i.pinimg.com/736x/ab/ed/ba/abedba7b172503e72dbcd7cdfa01a65f.jpg" alt="Skill">
+            </a>
+            <a href="https://www.behance.net/?isa0=1" target="_blank"> <img
+                    src="https://i.pinimg.com/736x/5e/da/de/5edade055febca792883ea10091f12fc.jpg" alt="Skill">
+            </a>
+            <a href="https://github.com/" target="_blank"><img
+                    src="https://raw.githubusercontent.com/tandpfun/skill-icons/refs/heads/main/icons/Github-Light.svg"
+                    alt="GitHub"></a>
+
+            <a href="https://www.microsoft.com/en-us/sql-server" target="_blank"> <img
+                    src="https://i.pinimg.com/474x/92/b2/16/92b2162c950dab4455095a7b9f561587.jpg" alt="Skill">
+            </a>
+            <a href="https://unity.com/" target="_blank"> <img
+                    src="https://i.pinimg.com/736x/93/ba/45/93ba45a5e7e353db4d0aadcd24e7981e.jpg" alt="Skill">
+            </a>
+            <a href="https://www.blender.org/" target="_blank"> <img
+                    src="https://i.pinimg.com/736x/9c/d2/58/9cd258e5d7ac15bcb408645c433d2599.jpg" alt="Skill">
+            </a>
+            <a href="https://nodejs.org/en" target="_blank"><img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+                    alt="Node.js"></a>
+            <a href="https://react.dev/" target="_blank"> <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React">
+            </a>
+        </div>
+    </section>
+
+
+    <section class="row m-0 mt-5 pt-5 pb-5 d-flex flex-column justify-content-center" id="Education">
+        <h2 class="text-center text-white text-shadow" style="text-shadow: 2px 2px 4px #000000;">Education and Certificates</h2>
+    
+        <div class="container">
+            <div class="row slideanim align-items-center pt-5">
+                <div class="col-12 col-md-2 text-center">
+                    <a href="https://www.depi.gov.eg/" target="_blank">
+                        <img class="ms-5" src="https://samahali.github.io/assets/images/proAr.png" class="img-fluid" style="max-width: 100px; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.324);">
+                    </a>
+                </div>
+                <div class="col-12 col-md-10 text-white pt-3 ps-5" >
+                    <h5>React Frontend Web Developer Trainee, DEPI Program Ministry of Communications and Information Technology</h5>
+                    <p class="text-light">2024 – Present</p>
+                    <p class="text-light">Acquiring comprehensive knowledge in HTML, CSS, JavaScript, and specializing in React for frontend web development. Gaining proficiency in Git/GitHub for version control, Node.js for server-side scripting, and containerization tools like Docker and Kubernetes.</p>
+                </div>
+            </div>
+    
+            <div class="row slideanim align-items-center pt-5">
+                <div class="col-12 col-md-2 text-center">
+                    <a href="https://kfs.edu.eg/computers/"target="_blank">
+                        <img class="ms-5" src="data:image/png;base64,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" class="img-fluid" style="max-width: 100px; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.324);">
+                    </a>
+                </div>
+                <div class="col-12 col-md-10 text-white pt-3 ps-5">
+                    <h5>Master’s Degree in Computer Vision, Faculty of Computers and Information, Menoufia University</h5>
+                    <p class="text-light">2024 – Present</p>
+                    <p class="text-light">Researching advanced computer vision techniques, deep learning algorithms, and AI applications in image processing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="position-relative">
+        <section class="row p-0 m-0 contect position-absolute top-50" id="contact">
+            <div class="container">
+                <h3 style="  text-shadow: 2px 2px 4px #000000;" class="text-center pt-5">Contact Me</h3>
+
+                <div class="notes pt-5">
+                    <div class="note" data-link="omnyatarek137@gmail.com">E-mail</div>
+                    <div class="note" data-link="tel:+123456789">Phone</div>
+                    <div class="note" data-link="https://www.linkedin.com/in/omnya137/">LinkedIn</div>
+                    <div class="note" data-link="https://www.behance.net/omnyaezz">Behance</div>
+                    <div class="note" data-link="https://github.com/omnyatarek">GitHub</div>
+                </div>
+                <div class="notes-text text-center">
+                    <p> <span><a href="mailto:omnyatarek137@gmail.com">omnyatarek137@gmail.com</a></span></p>
+                    <p><span><a href="tel:+123456789">+201273308408</a></span></p>
+                </div>
+                <p style="  text-shadow: 2px 2px 4px #000000;
+" class="text-center pt-5">Copyright &copy; 2025 | Designed & Developed by omnya tarek.</p>
+
+        </section>
+
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                $(".slideanim").each(function () {
+                    var pos = $(this).offset().top;
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + $(window).height() - 100) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+
+            // Click event for the cards
+            $(".card").click(function () {
+                // Remove center class from all cards
+                $(".card").removeClass("card-center");
+
+                // Add center class to clicked card
+                $(this).addClass("card-center");
+
+                // Rotate other cards around the centered one
+                var index = $(this).index();
+                $(".card-container").css("transform", "translateX(-" + (index * 100) + "px)");
+            });
+        });
+
+        function moveToCenter(clickedCard) {
+            $('.card').removeClass('active');
+            $(clickedCard).addClass('active');
+        }
+        const notes = document.querySelectorAll('.note');
+
+        // Loop through each note and add a click event
+        notes.forEach(note => {
+            note.addEventListener('click', () => {
+                // Get the link associated with the clicked note
+                const link = note.getAttribute('data-link');
+
+                // If it's an email or phone, open directly, otherwise open the URL
+                if (link.startsWith('mailto:') || link.startsWith('tel:')) {
+                    window.location.href = link;
+                } else {
+                    window.open(link, '_blank');
+                }
+            });
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>
